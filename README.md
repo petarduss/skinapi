@@ -16,14 +16,14 @@ Skin Generator API to prosty serwer API umożliwiający generowanie i przechowyw
 
 3. Skonfiguruj połączenie z bazą danych MongoDB w pliku server.ts:
 
-// server.ts
-// ...
-mongoose
-    .connect(
-        "mongodb://localhost:27017",
-        { useNewUrlParser: true, useUnifiedTopology: true, dbName: "skins" }
-    )
-// ...
+    ```// server.ts
+    // ...
+    mongoose
+        .connect(
+            "mongodb://localhost:27017",
+            { useNewUrlParser: true, useUnifiedTopology: true, dbName: "skins" }
+        )
+    // ...```
 
 4. Uruchom serwer:
 
