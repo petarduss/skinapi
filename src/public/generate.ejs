@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generator skinów</title>
+</head>
+
+<body>
+    <h1>Generator skinów</h1>
+
+    <form method="POST" action="/generate" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".png, .jpg, .jpeg" required onchange="validateFile(this)" />
+        <button type="submit">Wygeneruj</button>
+    </form>
+
+    <script>
+        function validateFile(input) {
+            const file = input.files[0];
+            const maxSizeMB = 1;
+            const maxDimensions = { width: 64, height: 64 };
+
+            if (file) {
+                const fileSizeMB = file.size / (1024 * 1024);
+                const img = new Image();
+
+                img.onload = function () {
+                    const width = img.width;
+                    const height = img.height;
+
+                    if (fileSizeMB > maxSizeMB) {
+                        alert('Maksymalny rozmiar pliku to 1 MB.');
+                        input.value = '';
+                    } else if (width > maxDimensions.width || height > maxDimensions.height) {
+                        alert('Maksymalne wymiary pliku to 64x64 px.');
+                        input.value = '';
+                    }
+                };
+
+                img.src = window.URL.createObjectURL(file);
+            }
+        }
+    </script>
+</body>
+
+</html>

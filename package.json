@@ -1,0 +1,26 @@
+{
+  "name": "skingeneratorapi",
+  "version": "1.0.0",
+  "description": "Push skin id/signature/value into mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts"
+  },
+  "author": "PetardekYT",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.13.0",
+    "axios": "^0.21.4",
+    "body-parser": "^1.20.1",
+    "connect-mongo": "^4.6.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.7.1",
+    "multer": "^1.4.5-lts.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
