@@ -12,7 +12,6 @@ Skin Generator API to prosty serwer API umożliwiający generowanie i przechowyw
 
 2. Zainstaluj zależności:
 
-  ```cd SkinGeneratorApi```
   ```npm install```
 
 3. Skonfiguruj połączenie z bazą danych MongoDB w pliku server.ts:
