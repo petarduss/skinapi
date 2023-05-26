@@ -37,10 +37,6 @@ Struktura projektu
     generate.ts - Klasa Generate odpowiedzialna za przetwarzanie żądania generowania skinów.
     models/SkinSchema.ts - Model MongoDB dla kolekcji skinów.
 
-Pliki
-server.ts
-
 Plik server.ts zawiera konfigurację serwera Express.js oraz obsługę żądań HTTP.
-generate.ts
 
 Plik generate.ts zawiera klasę Generate, która odpowiada za przetwarzanie żądania generowania skinów. W metodzie uploadToMineskin następuje przesłanie pliku do Mineskin API, zapisanie wynikowych danych skinu w bazie danych MongoDB oraz obsługa błędów.
