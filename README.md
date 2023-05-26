@@ -8,7 +8,7 @@ Skin Generator API to prosty serwer API umożliwiający generowanie i przechowyw
 
 1. Sklonuj repozytorium:
 
-   ```shell git clone https://github.com/petarduss/SkinGeneratorApi.git```
+   ```shell git clone https://github.com/petarduss/skinapi.git```
 
 2. Zainstaluj zależności:
 
